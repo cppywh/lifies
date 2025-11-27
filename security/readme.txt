@@ -36,7 +36,7 @@
 
 **A 线：PQC 迁移（工程密码学）**
 
-* 第 1–2 周：读 NIST 公告 + NSA CNSA2.0 时间表，明确算法与合规背景。([NIST Computer Security Resource Center][2])
+* 第 1–2 周：读 NIST 公告 + NSA CNSA2.0 时间表，明确算法与合规背景。([NIST Computer Security Resource Center][2]) 至少FIPS 203/204/205,推荐NISTIR 8547与NSA CNSA 2.0 时间表
 * 第 3–6 周：基于 **Open Quantum Safe** 的 **liboqs / oqs‑provider**，在 OpenSSL 3 上开启 **ML‑KEM(=Kyber)** 握手 + **ML‑DSA(=Dilithium)** 证书签名；可做 **混合握手**。([Open Quantum Safe][6])
 * 第 7–8 周：对比 RSA/ECDHE vs PQC 的握手耗时、报文大小、证书链体积。
 * 第 9–10 周：写迁移指南（编译参数、OpenSSL provider 配置、兼容性踩坑）。
